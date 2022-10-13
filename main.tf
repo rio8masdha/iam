@@ -10,13 +10,13 @@ provider "aws" {
   secret_key = var.secret
 }
 
-variable "access_id_iam" {
-  default = ""
-}
+#variable "access_id_iam" {
+#  default = ""
+#}
 
-variable "secret_iam" {
-  default = ""
-}
+#variable "secret_iam" {
+##  default = ""
+#}
 
 resource "aws_iam_user" "user" {
   name = var.name
