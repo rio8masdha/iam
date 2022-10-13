@@ -1,8 +1,15 @@
+#provider "aws" {
+#      region     = "${var.region}"
+#      access_key = "${var.access_key}"
+#      secret_key = "${var.secret_key}"
+#}
+
 provider "aws" {
-      region     = "${var.region}"
-      access_key = "${var.access_key}"
-      secret_key = "${var.secret_key}"
+  region  = "us-east-1"
+  access_key = var.access_id_iam
+  secret_key = var.secret_iam
 }
+
 
 resource "aws_iam_user" "user" {
   name = var.name
