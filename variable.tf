@@ -6,10 +6,8 @@ variable "secret_iam" {
   default = ""
 }
 
-region = "us-east-1"
-variable "region" {
-}
-
+#variable "region" {
+#}
 
 variable "name" {
   default = "myadmin"
