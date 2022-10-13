@@ -1,14 +1,12 @@
-variable "access_id_iam" {
-  default = ""
-}
-
-variable "secret_iam" {
-  default = ""
-}
-
-#variable "region" {
+#variable "access_key" {
+#     description = "Access key to AWS console"
 #}
-
+#variable "secret_key" {
+#     description = "Secret key to AWS console"
+#}
+#variable "region" {
+#     description = "Region of AWS VPC"
+#}
 variable "name" {
   default = "myadmin"
   type        = "string"
@@ -20,4 +18,3 @@ variable "policy_arns" {
   type        = string
   description = "ARN of policy to be associated with the created IAM user"
 }
-
