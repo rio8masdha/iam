@@ -1,5 +1,7 @@
 provider "aws" {
-  region = "eu-west-1"
+  region  = "us-east-1"
+  access_key = var.access_id_iam
+  secret_key = var.secret_iam
 }
 
 module "iam-user" {
